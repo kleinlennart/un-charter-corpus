@@ -1,4 +1,5 @@
 import os
+import re
 from pathlib import Path
 
 data_folder = Path("data")
@@ -19,6 +20,9 @@ for filename in os.listdir(input_dir):
         # Read the content of the file
         with open(input_path, "r", encoding="utf-8") as file:
             content = file.read()
+
+        # Remove Unicode control characters (bidi marks, etc.)
+        content = re.sub(r"[\u200e\u200f\u202a-\u202e]", "", content)
 
         # Clean white spaces
         cleaned_content = " ".join(content.split())
