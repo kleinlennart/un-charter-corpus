@@ -1,6 +1,8 @@
 # UN Charter Corpus
 
-You can find the full text of the UN Charter in the six official UN languages at the following link:
+This repo includes full text .txt versions of the UN Charter.
+
+You can find the full text of the UN Charter in the six official UN languages at the following links:
 
 - [**ar**: Arabic](https://www.un.org/ar/about-us/un-charter/full-text)
 - [**zh**: Chinese](https://www.un.org/zh/about-us/un-charter/full-text)
